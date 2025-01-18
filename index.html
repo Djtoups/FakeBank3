@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Bank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Welcome to Fake Bank</h1>
+        <form id="login-form">
+            <input type="text" placeholder="Username" id="username" required>
+            <input type="password" placeholder="Password" id="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <div class="dashboard hidden" id="dashboard">
+        <h1>Account Overview</h1>
+        <p><strong>Account Balance:</strong> $1,234,567.89</p>
+        <h3>Recent Transactions</h3>
+        <ul>
+            <li>Transfer to John Doe: -$500.00</li>
+            <li>Payment from ACME Inc.: +$1,000.00</li>
+            <li>ATM Withdrawal: -$100.00</li>
+        </ul>
+        <button id="logout">Logout</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
